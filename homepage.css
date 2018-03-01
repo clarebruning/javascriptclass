@@ -1,0 +1,41 @@
+body {
+    font-family: Georgia;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+div {
+    background-color: rgba(173, 198, 129, .2)
+}
+
+#intro {
+    width: 40%;
+    float: left;
+    padding: 0 4%;
+}
+
+#class {
+    width: 40%;
+    float: right;
+    padding: 0 4%;
+    height:inherit;
+}
+
+
+h2 {
+    text-align: center;
+    border-bottom: solid 1px darkred;
+}
+
+li {
+    padding: 1.5%;
+}
