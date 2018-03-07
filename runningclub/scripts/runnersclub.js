@@ -1,24 +1,11 @@
-$(".races").hide();
-$(document).ready(function() {
+$(".races").children().children().filter("ul").hide();
+
+$(".races").children().children().filter("li").click(function() {
+  
+   $(".races").children().children().filter("ul").not(":hidden").slideToggle(); 
+    $(this).next().not(":visible").slideToggle();
+ 
     
 
-    $("#first").click(function() {
-        $("#5k").toggle();
-        $("#half").slideUp();
-        $("#full").fadeOut();
-    });//end first section
 
-    $("#second").click(function() {
-        $("#half").slideToggle();
-        $("#5k").hide();
-        $("#full").fadeOut();
-    });//end second section
-
-    $("#third").click(function() {
-        $("#full").fadeToggle();
-        $("#5k").hide();
-        $("#half").slideUp();
-    });//end third section
-    
-    
 });
